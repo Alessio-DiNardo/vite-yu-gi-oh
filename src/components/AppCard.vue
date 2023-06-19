@@ -1,59 +1,16 @@
 <template>
         <div class="card mb-3 col-3 border border-0">
-            <img src= "https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
+            <img :src= "cardImg" class="card-img-top" :alt="name + 'image'">
             <div class="card-body">
                 <h5 class="card-title">
-                    A CELL BREENDIG 
+                    {{cardName}}
                 </h5>
                 <p class="card-text"><small class="text-body-secondary">
-                    Alien</small>
+                    {{ cardSpecies }}</small>
                 </p>
             </div>
         </div>
-        <div class="card mb-3 col-3 border border-0">
-            <img src= "https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">
-                    A CELL BREENDIG 
-                </h5>
-                <p class="card-text"><small class="text-body-secondary">
-                    Alien</small>
-                </p>
-            </div>
-        </div>
-        <div class="card mb-3 col-3 border border-0">
-            <img src= "https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">
-                    A CELL BREENDIG 
-                </h5>
-                <p class="card-text"><small class="text-body-secondary">
-                    Alien</small>
-                </p>
-            </div>
-        </div>
-        <div class="card mb-3 col-3 border border-0">
-            <img src= "https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">
-                    A CELL BREENDIG 
-                </h5>
-                <p class="card-text"><small class="text-body-secondary">
-                    Alien</small>
-                </p>
-            </div>
-        </div>
-        <div class="card mb-3 col-3 border border-0">
-            <img src= "https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">
-                    A CELL BREENDIG 
-                </h5>
-                <p class="card-text"><small class="text-body-secondary">
-                    Alien</small>
-                </p>
-            </div>
-        </div>
+        
 </template>
 <script>
 export default {
@@ -63,6 +20,11 @@ export default {
             
         }
     },
+    props:{
+        cardName: String,
+        cardSpecies: String,
+        cardImg: String,
+    }
 }
 </script>
 <style lang="scss" scoped>

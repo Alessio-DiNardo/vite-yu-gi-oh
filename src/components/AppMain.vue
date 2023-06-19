@@ -7,7 +7,11 @@
                 </div>
             </div>
             <div class="row text-center ms-6">
-                <AppCard/>
+                <AppCard v-for="card in cardList"
+                        :cardName="card.name"
+                        :cardSpecies="card.archetype"
+                        :cardImg="card.card_image.image_url"
+                />
             </div>
         </div>
     </div>
