@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>AppHeader</h1>
+        <h1>YU-GI-OG Api</h1>
     </div>
 </template>
 <script>

@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <h2>AppMain</h2>
+    <div class="container-fluid pt-5 ">
+        <div class="container">
+
+        </div>
     </div>
     <AppCard/>
 </template>
@@ -34,5 +36,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    
+    div.container-fluid{
+        background-color: #d48f38;
+        height: 800px;
+    }
+
+    div.container{
+        background-color: white;
+        width: 1200px;
+        height: 700px;
+    }
 </style>
