@@ -1,10 +1,17 @@
 <template>
     <div class="container-fluid pt-5 ">
         <div class="container">
-
+            <div class="row">
+                <div class="col-12">
+                    list
+                </div>
+            </div>
+            <div class="row text-center ms-6">
+                <AppCard/>
+            </div>
         </div>
     </div>
-    <AppCard/>
+    
 </template>
 <script>
 import AppCard from './AppCard.vue'
