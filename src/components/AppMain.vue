@@ -10,7 +10,7 @@
                 <AppCard v-for="card in cardList"
                         :cardName="card.name"
                         :cardSpecies="card.archetype"
-                        :cardImg="card.card_image[0].image_url"
+                        :cardImg="card.card_images[0].image_url"
                 />
             </div>
         </div>
