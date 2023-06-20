@@ -1,10 +1,13 @@
 <template>
     <div class="container-fluid pt-5 ">
+        <div class="row">
+            <div class="col-12 ps-5 pb-5 justify-content-center">
+                <CharacterDropmenu/>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <CharacterDropmenu/>
-                </div>
+                
             </div>
             <div class="row text-center ms-6">
                 <AppCard v-for="card in cardList"
@@ -51,12 +54,12 @@ export default {
 <style lang="scss" scoped>
     div.container-fluid{
         background-color: #d48f38;
-        height: 800px;
+        
     }
 
     div.container{
         background-color: white;
         width: 1200px;
-        height: 700px;
+        
     }
 </style>
