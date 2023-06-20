@@ -10,7 +10,7 @@
                 <AppCard v-for="card in cardList"
                         :cardName="card.name"
                         :cardSpecies="card.archetype"
-                        :cardImg="card.card_image.image_url"
+                        :cardImg="card.card_image[0].image_url"
                 />
             </div>
         </div>
@@ -37,8 +37,8 @@ export default {
     created(){
                 axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
                 .then( (response) => {
-                console.log(response.data.results);
-                this.cardList = response.data.results
+                console.log(response.data.data);
+                this.cardList = response.data.data
             })
                 .catch(function (error) {
                 console.log(error);
