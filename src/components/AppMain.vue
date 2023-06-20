@@ -9,7 +9,7 @@
             <div class="row">
                 
             </div>
-            <div class="row text-center ms-6">
+            <div class="row text-center ms-6 pt-3">
                 <AppCard v-for="card in cardList"
                         :cardName="card.name"
                         :cardSpecies="card.archetype"
