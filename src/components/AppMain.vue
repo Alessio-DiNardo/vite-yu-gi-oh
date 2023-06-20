@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    list
+                    <CharacterDropmenu/>
                 </div>
             </div>
             <div class="row text-center ms-6">
@@ -19,6 +19,7 @@
 </template>
 <script>
 import AppCard from './AppCard.vue'
+import CharacterDropmenu from './CharacterDropmenu.vue'
 import {store} from '../store'
 import axios from 'axios';
 export default {
@@ -32,7 +33,8 @@ export default {
         }
     },
     components:{
-        AppCard
+        AppCard,
+        CharacterDropmenu
     },
     created(){
                 axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
